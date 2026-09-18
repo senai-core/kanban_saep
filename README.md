@@ -1,24 +1,11 @@
-# Quadro de Tarefas (SAEP)
+# Kanban SAEP
 
-Sistema de gerenciamento de tarefas no estilo kanban, feito em PHP puro com MySQL para a prova prática do SAEP.
+Simulado da prova prática do SAEP: tarefas por usuário, movidas entre `a fazer`, `fazendo` e `pronto`.
 
-## Funcionalidades
+PHP + MySQL (PDO), banco `db_saep`.
 
-- Cadastro, edição e exclusão de usuários (nome e e-mail)
-- Cadastro e edição de tarefas com título, descrição, setor, prioridade, data, status e usuário responsável
-- Quadro com as colunas **A fazer**, **Fazendo** e **Pronto**
-- Troca de status direto no cartão da tarefa
-- Exclusão com confirmação
+```
+usuarios 1 ──< N tarefas
+```
 
-## Como rodar (XAMPP)
-
-1. Inicie o Apache e o MySQL no painel do XAMPP.
-2. Abra o phpMyAdmin e importe o arquivo `create_db.sql` (cria o banco `db_saep` com dados de exemplo).
-3. Copie a pasta `kanban_saep` para `C:\xampp\htdocs\`.
-4. Acesse `http://localhost/kanban_saep`.
-
-A conexão está em `config.php` (usuário `root`, sem senha, host `localhost`).
-
-## Autor
-
-Guilherme Wohl
+No XAMPP, importa o `create_db.sql`, coloca a pasta no `htdocs` e acessa `localhost/kanban_saep`.
